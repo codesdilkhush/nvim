@@ -8,8 +8,8 @@ return {
     },
     config = function()
         require("nvim-treesitter").setup {
-            ensure_installed = { "lua", "python", "prisma", "javascript", "cpp", "c", "go", "typescript", "css", "html", "tsx", "json", "bash", "yaml", "toml", "sql", "markdown" },
-            highlight = {
+            ensure_installed = { "lua", "python", "prisma", "javascript", "cpp", "c", "go", "typescript", "css", "html", "tsx", "json", "bash", "yaml", "toml", "sql", "markdown","dockerfile" },
+             highlight = {
                 enable = true,
                 additional_vim_regex_highlighting = false,
             },

@@ -20,9 +20,9 @@ keymap.set("n", "<leader>c", function()
 	require("nvim-tree.api").node.navigate.parent_close()
 end, { silent = true, desc = "Collapse folder" })
 
-keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) 
-keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer on current file" }) 
-keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) 
+keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
+keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer on current file" })
+keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" })
 keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" })
 
 -- File actions
@@ -38,8 +38,6 @@ keymap.set("n", "<leader>xl", '"+dd', { desc = "Cut line to clipboard" })
 keymap.set("n", "<leader>p", '"+p', { desc = "Paste after cursor" })
 keymap.set("n", "<leader>P", '"+P', { desc = "Paste before cursor" })
 keymap.set("v", "<leader>p", '"_d"+p', { desc = "Paste over selection" })
-
-
 
 -- LazyGit
 keymap.set("n", "<leader>lg", "<cmd>LazyGit<cr>", {
@@ -131,3 +129,6 @@ keymap.set("n", "<leader>sv", "<cmd>vsplit<cr>", { desc = "Vertical split" })
 keymap.set("n", "<leader>sh", "<cmd>split<cr>", { desc = "Horizontal split" })
 keymap.set("n", "<leader>sc", "<cmd>close<cr>", { desc = "Close split" })
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Equalize splits" })
+
+-- Cloak Toggle
+keymap.set("n", "<leader>tc", "<cmd>CloakToggle<cr>", { desc = "Toggle Cloak (.env secrets)" })

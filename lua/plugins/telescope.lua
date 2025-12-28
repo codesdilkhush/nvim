@@ -42,7 +42,7 @@ return {
 					"build",
 					".next",
 					".cache",
-					".venv",
+                    ".venv",
 				},
 				mappings = {
 					i = {

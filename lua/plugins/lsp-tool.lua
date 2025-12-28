@@ -16,7 +16,7 @@ return {
                 "black",
                 "isort",
                 -- Go
-                "gospel",
+                "gopls",
                 "goimports",
 
                 -- C / C++
