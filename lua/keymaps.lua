@@ -98,6 +98,14 @@ keymap.set("n", "<leader>l", function()
 	require("lint").try_lint()
 end, { desc = "Run lint" })
 
+-- Move lines
+keymap.set("n", "<A-j>", ":m .+1<CR>==")
+keymap.set("n", "<A-k>", ":m .-2<CR>==")
+keymap.set("i", "<A-j>", "<Esc>:m .+1<CR>==gi")
+keymap.set("i", "<A-k>", "<Esc>:m .-2<CR>==gi")
+keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv")
+keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
+
 -- Telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", { desc = "Find files" })
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Recent files" })

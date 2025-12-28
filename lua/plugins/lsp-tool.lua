@@ -1,38 +1,40 @@
 return {
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
-    dependencies = {
-        "williamboman/mason.nvim",
-    },
-    config = function()
-        require("mason-tool-installer").setup({
-            ensure_installed = {
-                -- Lua
-                "stylua",
+	"WhoIsSethDaniel/mason-tool-installer.nvim",
+	dependencies = {
+		"williamboman/mason.nvim",
+	},
+	config = function()
+		require("mason-tool-installer").setup({
+			ensure_installed = {
+				-- Lua
+				"stylua",
 
-                -- JS / TS / Web
-                "prettier",
+				-- JS / TS / Web
+				"prettier",
 
-                -- Python
-                "black",
-                "isort",
-                -- Go
-                "gopls",
-                "goimports",
+				-- Python
+				"black",
+				"isort",
+				-- Go
+				"gopls",
+				"goimports",
 
-                -- C / C++
-                "clang-format",
+				-- C / C++
+				"clang-format",
 
-                -- Shell
-                "shfmt",
+				-- Shell
+				"shfmt",
 
-                -- LSP servers
-                "lua-language-server",
-                "pyright",
-                "gopls",
-                "ts_ls",
-                "html",
-                "cssls",
-            },
-        })
-    end,
+				-- LSP servers
+				"lua-language-server",
+				"pyright",
+				"gopls",
+				"ts_ls",
+				"html",
+				"cssls",
+
+			
+			},
+		})
+	end,
 }
