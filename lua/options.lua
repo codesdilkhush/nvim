@@ -56,3 +56,8 @@ opt.clipboard = "unnamedplus"
 opt.splitright = true
 opt.splitbelow = true
 
+-- timeout
+opt.timeout = true
+opt.timeoutlen = 300
+
+
