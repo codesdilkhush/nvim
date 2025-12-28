@@ -94,7 +94,7 @@ keymap.set("v", "<leader>/", "<Plug>(comment_toggle_linewise_visual)", {
 	desc = "Toggle comment",
 })
 -- Linter
-keymap.set("n", "<leader>l", function()
+keymap.set("n", "<leader>ln", function()
 	require("lint").try_lint()
 end, { desc = "Run lint" })
 
