@@ -113,6 +113,7 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Live gre
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Word under cursor" })
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Buffers" })
 keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Todos" })
+keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "help" })
 
 -- Trouble
 keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnostics (Trouble)" })
@@ -140,3 +141,7 @@ keymap.set("n", "<leader>se", "<C-w>=", { desc = "Equalize splits" })
 
 -- Cloak Toggle
 keymap.set("n", "<leader>tc", "<cmd>CloakToggle<cr>", { desc = "Toggle Cloak (.env secrets)" })
+
+
+
+
